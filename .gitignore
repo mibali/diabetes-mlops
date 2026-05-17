@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+mlruns/
+.dvc/
+data/*.csv
+models/*.pkl
+venv/
+.env
