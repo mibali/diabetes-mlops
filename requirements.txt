@@ -7,3 +7,5 @@ uvicorn
 pydantic
 joblib
 python-dotenv
+httpx
+pytest
