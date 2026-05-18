@@ -66,14 +66,14 @@ def main():
         mlflow.log_metric("f1_score", f1)
         
         # Log  model
-        mlflow.sklearn.log_model(model, "model")
+        mlflow.sklearn.log_model(model, "model", registered_model_name="diabetes-random-forest")
         
         # Save model locally too
         os.makedirs("models", exist_ok=True)
         joblib.dump(model, "models/diabetes_model.pkl")
         
         print(f"✅ Model trained! Accuracy: {accuracy:.4f}")
-        
+        print("✅ Model registered in MLflow Registry as 'diabetes-random-forest'")
 if __name__ == "__main__":
     main()
         
