@@ -3,6 +3,10 @@ __pycache__/
 mlruns/
 .dvc/
 data/*.csv
-models/*.pkl
 venv/
+.venv/
 .env
+__pycache__/
+*.pkl
+!models/diabetes_model.pkl   # Allow our trained model
+mlflow.db
