@@ -10,3 +10,4 @@ __pycache__/
 *.pkl
 !models/diabetes_model.pkl   # Allow our trained model
 mlflow.db
+mlflow.db
